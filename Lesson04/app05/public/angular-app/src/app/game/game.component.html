@@ -1,0 +1,13 @@
+<p>Game Details: </p>
+
+<H1>{{game.title}} - <stars-rating [rating]=game.rate></stars-rating> </H1>
+    
+<br>
+Year: {{game.year}}<br/>
+Price: {{game.price|currency}}<br/>
+Minimum Players: {{game.minPlayers}}<br/>
+Maximum Players: {{game.maxPlayers}}<br/>
+Minimum Age: {{game.minAge}}<br/>
+<app-button [Id]=game._id></app-button>
+<!-- <button [ngStyle]="{ color: 'red' }" (click)="deleteGame(game._id)">Delete this game</button> -->
+<!-- <app-button></app-button> -->

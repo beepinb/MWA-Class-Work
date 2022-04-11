@@ -1,0 +1,22 @@
+{
+  "name": "app01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "startBackend": "npm start",
+    "startFrontEnd": "cd ./public/angular-app && npm start",
+    "startBoth": "npm-run-all  --parallel startBackend startFrontEnd",
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bipin",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongodb": "^4.4.1",
+    "mongoose": "^6.2.9",
+    "npm-run-all": "^4.1.5"
+  }
+}

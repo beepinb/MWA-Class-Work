@@ -1,0 +1,34 @@
+<br>
+<form [formGroup]="registrationForm" (ngSubmit)="register(registrationForm)">
+    <div>
+      <label>
+        Title: 
+        <input formControlName="title" placeholder="Game Title">
+      </label>
+    </div>
+  <br>
+    <div>
+      <label>
+        Year: 
+        <input formControlName="year" placeholder="Year">
+      </label>
+    </div>
+    <br>
+    <div>
+      <label>
+        Rate: 
+        <input formControlName="rate" placeholder="rate" >
+      </label>
+    </div>
+    <br>
+    <div>
+      <label>
+        Price: 
+        <input formControlName="price" placeholder="price" >
+      </label>
+    </div>
+    <br>
+    <div>
+        <input type="submit" value="Register">
+    </div>
+  </form>

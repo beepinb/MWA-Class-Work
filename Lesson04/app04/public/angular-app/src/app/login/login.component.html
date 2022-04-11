@@ -1,0 +1,23 @@
+<br>
+<form #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+    <div>
+      <label>
+        Username: 
+        <!-- <input id="username" name="username" placeholder="Username" [(ngModel)]="credentials.username"> -->
+        <input id="username" name="username" placeholder="Username" ngModel>
+      </label>
+    </div>
+  <br>
+    <div>
+      <label>
+        Password: 
+        <!-- <input  name="password" placeholder="password" type="password" [(ngModel)]="credentials.password"> -->
+        <input  name="password" placeholder="password" type="password" ngModel>
+      </label>
+    </div>
+    <br>
+    
+    <div>
+        <input type="submit" value="Login">
+    </div>
+  </form>
